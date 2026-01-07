@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANIRHISEIN TALEBI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Vazirmatn, Tahoma, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+    header {
+      background: linear-gradient(135deg, #1e293b, #020617);
+      padding: 32px 20px;
+      text-align: center;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #020617;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 12px;
+      z-index: 10;
+    }
+    nav a {
+      color: #93c5fd;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { color: #bfdbfe; }
+    main {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section { margin-bottom: 60px; }
+    h2 { margin-bottom: 16px; }
+
+    .card {
+      background: #020617;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      animation: fadeUp 0.8s ease;
+    }
+
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .video-card video {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      background: #020617;
+      text-align: center;
+      padding: 30px 20px;
+      color: #9ca3af;
+    }
+    .social a {
+      margin: 0 10px;
+      color: #93c5fd;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ANIRHISEIN TALEBI</h1>
+  <p>???????? ????? ? ????? ???? ??</p>
+</header>
+
+<nav>
+  <a href="#videos">???????</a>
+  <a href="#about">?????? ??</a>
+  <a href="#gallery">?????</a>
+  <a href="#contact">??????</a>
+</nav>
+
+<main>
+
+<section id="videos">
+  <h2>???????? ??</h2>
+  <div class="videos">
+    <div class="card video-card">
+      <video controls controlsList="nodownload">
+        <source src="videos/sample1.mp4" type="video/mp4">
+      </video>
+      <h3>????? ?????</h3>
+      <p>????? ????? ?????? ??? ?????</p>
+      <span class="tag">????</span>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="card">
+    <h2>?????? ??</h2>
+    <p>????? ??????? ???? ?? ????? ???? ?? ?????? ??? ? ????? ?? ????? ???.</p>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="card">
+    <h2>????? ??????</h2>
+    <p>????? ???????? ?????? ?? ????? ?? ???? ???? ????? ????.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card">
+    <h2>?????? ?? ??</h2>
+    <div class="social">
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">Telegram</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 — ANIRHISEIN TALEBI
+</footer>
+
+</body>
+</html>
